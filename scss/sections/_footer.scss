@@ -1,0 +1,47 @@
+@use "abstracts" as *;
+@use "base" as *;
+
+.footer {
+    background-color: $clr-dark;
+    color: $clr-light;
+    padding: 2em 3em;
+
+    @media (min-width: $medium){
+        padding: 3em;
+    }
+
+    &__container {
+        width: $width;
+        max-width: $max-width;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        @media (min-width: $medium){
+            flex-direction: row;
+        }
+    }
+
+    &__list {
+        list-style: none;   
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+
+        &:first-of-type {
+            margin-bottom: 1em;
+            @media (min-width: $medium){
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    & a {
+        transition: color 300ms ease-in-out;
+    }
+    & a:hover {
+        color: $clr-mid;
+    }
+}

@@ -1,0 +1,58 @@
+$clr-light: white;
+$clr-light-transparent: rgba(255, 255, 255, 0.75);
+$clr-light-2: rgb(241, 220, 255);
+$clr-mid: rgb(240, 186, 227);
+$clr-dark: rgb(13, 0, 83);
+
+$glass-gradient-top: rgba(78, 2, 129, 0.2);
+$glass-gradient-middle: rgba(229, 145, 222, 0.5);
+$glass-gradient-bottom: rgba(255, 245, 211, 0.7);
+
+$glass-shadow: rgba(255, 255, 255, 0.527);
+
+$glass-gradient: 
+    linear-gradient(135deg,
+        $glass-gradient-top,
+        $glass-gradient-middle, 
+        $glass-gradient-bottom 80%
+    );
+$glass-gradient-2: 
+    linear-gradient(-135deg,
+        $glass-gradient-top,
+        $glass-gradient-middle, 
+        $glass-gradient-bottom 80%
+    );
+
+$background-gradient:
+    linear-gradient(
+        217deg, 
+        rgba(19, 0, 124, 0.788), 
+        rgba(255, 0, 242, 0.192),
+        rgba(255, 250, 230, 0.8) 70.71%
+    ),            
+    linear-gradient(
+        127deg, 
+        rgba(255, 92, 201, 0.192), 
+        rgba(19, 0, 124, 0.788) 70.71%
+    ),            
+    linear-gradient(
+        336deg, 
+        rgba(27, 2, 85, 0.8), 
+        rgba(255, 255, 255, 0.8) 70.71%
+    );
+
+$background-blend: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.75), 
+    rgba(255, 255, 255, 0.95),
+    #fff);
+
+$label-gradient: linear-gradient(
+        90deg,
+        $clr-light-2,
+        transparent);
+
+$card-gradient: linear-gradient(
+        $glass-gradient-middle,
+        transparent);

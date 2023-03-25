@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дианино портфолио</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="scss/style.scss">
+    <!-- Goofle fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a5bd618ea0.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <a href="#top" class="header__link">
+                <div class="header__logo heart"></div>             
+            </a>
+            <button class="nav__toggle">
+                <span class="nav__hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#intro" class="nav__link">Я кто?</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Что я умею</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Мои проекты</a></li>
+                    <li class="nav__item"><a href="#contacts" class="nav__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>   
+    </header>
+
+    <!-- Intro -->
+    <section class="intro" id="intro">
+        <div class="intro__gems">
+            <span class="gem diamond-1" style="--i:11"></span>
+            <span class="gem diamond-2" style="--i:27"></span>
+            <span class="gem diamond-3" style="--i:18"></span>
+            <span class="gem diamond-1" style="--i:29"></span>
+            <span class="gem diamond-1" style="--i:13"></span>
+            <span class="gem diamond-2" style="--i:26"></span>
+            <span class="gem diamond-3" style="--i:15"></span>
+            <span class="gem diamond-1" style="--i:19"></span>
+            <span class="gem diamond-3" style="--i:12"></span>
+
+            <span class="gem diamond-1" style="--i:21"></span>
+            <span class="gem diamond-2" style="--i:17"></span>
+            <span class="gem diamond-3" style="--i:28"></span>
+            <span class="gem diamond-1" style="--i:19"></span>
+            <span class="gem diamond-1" style="--i:23"></span>
+            <span class="gem diamond-2" style="--i:16"></span>
+            <span class="gem diamond-3" style="--i:22"></span>
+            <span class="gem diamond-1" style="--i:17"></span>
+            <span class="gem diamond-3" style="--i:24"></span>
+
+            <span class="gem diamond-1" style="--i:11"></span>
+            <span class="gem diamond-2" style="--i:27"></span>
+            <span class="gem diamond-3" style="--i:18"></span>
+            <span class="gem diamond-1" style="--i:29"></span>
+            <span class="gem diamond-1" style="--i:13"></span>
+            <span class="gem diamond-2" style="--i:26"></span>
+            <span class="gem diamond-3" style="--i:15"></span>
+            <span class="gem diamond-1" style="--i:19"></span>
+            <span class="gem diamond-3" style="--i:12"></span>
+        </div>
+        <div class="intro__blend"></div>
+        <div class="intro__container">
+            <div class="intro__text">
+                <h1 class="intro__title">Привет,<br> я Диана :)</h1>
+                <p class="intro__paragraph">
+                    Фронтенд-разработчик, мечтающий делать классные сайты, 
+                    которые будут радовать пользователей и заказчиков.
+                </p>
+            </div>
+            <img class="intro__picture" src="img/diana-1.JPG" alt="фото Дианы">
+        </div> 
+    </section>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+        <h2 class="skills__title">Что я умею</h2>
+        <div class="skills__container">
+            <div class="skills__icon">
+                <i class="fa-brands fa-html5"></i>
+                <p class="skills_name">HTML5</p>
+            </div>
+            <div class="skills__icon">
+                <i class="fa-brands fa-css3"></i>
+                <p class="skills_name">CSS</p>
+            </div>
+            <div class="skills__icon">
+                <i class="fa-brands fa-sass"></i>
+                <p class="skills_name">Sass/<br>Scss</p>
+            </div>
+            <div class="skills__icon">
+                <i class="fa-brands fa-js"></i>
+                <p class="skills_name js">JavaScript</p>
+            </div>
+            <div class="skills__icon">
+                <i class="fa-brands fa-node-js"></i>
+                <p class="skills_name">Node.js</p>
+            </div>
+            <div class="skills__icon">
+                <i class="fa-brands fa-react"></i>
+                <p class="skills_name">Основы React</p>
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section class="projects" id="projects">
+        <h2 class="projects__title">Мои проекты</h2>
+        <ul class="projects__list">
+
+            <li class="card">
+                <a class="card__title" href="https://redisick.github.io/enfo/" target="_blank">
+                    <h3>Страница кондитерской</h3>
+                </a>
+                <a href="https://redisick.github.io/enfo/" target="_blank" class="card__picture--cluster">
+                    <img class=card__picture" src="img/project-enfo.jpg" alt="страница кондитерской" loading="lazy">
+                    <p class="card__year">2023</p>
+                </a>
+                <div class="card__text">
+                    <p class="card__desc">Страница кондитерской Enfo с обратной связью через Telegram-бота.</p>
+                    <ul class="card__tags">
+                        <li class="tag">HTML</li>
+                        <li class="tag">CSS</li>
+                        <li class="tag">JS</li>
+                    </ul>
+                    <ul class="card__links">
+                        <li class="card__link tooltip">
+                            <a href="https://github.com/Redisick/enfo" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <span class="tooltiptext">Код на GitHub</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="card">
+                <a class="card__title" href="https://dnd-spell-set-generator.onrender.com/" target="_blank">
+                    <h3>Генератор набора заклинаний D&D</h3>
+                </a>
+                <a href="https://dnd-spell-set-generator.onrender.com/" target="_blank" class="card__picture--cluster">
+                    <img class=card__picture" src="img/project-spells.jpg" alt="генератор набора заклинаний" loading="lazy">
+                    <p class="card__year">2023</p>
+                </a>
+                <div class="card__text">
+                    <p class="card__desc">
+                        <a href="https://dnd-api.cyclic.app/" target="_blank">API</a>, считывающий данные о заклинаниях с 
+                        <a href="https://dnd.su/" target="_blank">DnD.su</a> + 
+                        приложение React, генерирующее случайный набор заклинаний по заданным критериям 
+                        (класс, уровень, количество).
+                    </p>
+                    <ul class="card__tags">
+                        <li class="tag">React</li>
+                        <li class="tag">Node.js</li>
+                        <li class="tag">API</li>
+                        <li class="tag">HTML</li>
+                        <li class="tag">CSS</li>
+                        <li class="tag">JS</li>
+                    </ul>
+                    <ul class="card__links">
+                        <li class="card__link tooltip">
+                            <a href="https://github.com/Redisick/dnd-api" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                                <p>API</p>
+                            </a>   
+                            <span class="tooltiptext">Код на GitHub</span>      
+                        </li>
+                        <li class="card__link tooltip">
+                            <a href="https://github.com/Redisick/dnd-spell-set-generator-cra" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                                <p>React App</p>
+                            </a>
+                            <span class="tooltiptext">Код на GitHub</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="card">
+                <a class="card__title" href="https://redisick.github.io/poffi/" target="_blank">
+                    <h3>Страница бренда украшений</h3>
+                </a>
+                <a href="https://redisick.github.io/poffi/" target="_blank" class="card__picture--cluster">
+                    <img class=card__picture" src="img/project-poffi.jpg" alt="страница бренда украшений" loading="lazy">
+                    <p class="card__year">2022</p>
+                </a>
+                <div class="card__text">
+                    <p class="card__desc">Страница бренда украшений ручной работы Poffi.</p>
+                    <ul class="card__tags">
+                        <li class="tag">HTML</li>
+                        <li class="tag">CSS</li>
+                        <li class="tag">JS</li>
+                    </ul>
+                    <ul class="card__links">
+                        <li class="card__link tooltip">
+                            <a href="https://github.com/Redisick/poffi" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <span class="tooltiptext">Код на GitHub</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="card">
+                <h3 class="card__title">Эта страница ^-^</h3>               
+                <div class="card__text">
+                    <p class="card__desc">Моё портфолио, где я экспериментировала с анимациями и отрисовкой фигур и осваивала SCSS.</p>
+                    <ul class="card__tags">
+                        <li class="tag">HTML</li>
+                        <li class="tag">SCSS</li>
+                        <li class="tag">JS</li>
+                        <li class="tag">Node.js</li>
+                    </ul>
+                    <ul class="card__links">
+                        <li class="card__link tooltip">
+                            <a href="https://github.com/Redisick/portfolio-2" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <span class="tooltiptext">Код на GitHub</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+    <section class="contacts" id="contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="gem-1 diamond-1"></div>
+        <ul class="contacts__list">
+            <li class="contacts__item tooltip">
+                <div class="cluster">                    
+                    <p class="copy">sur-mur@mail.ru</p>
+                    <i class="fa-solid fa-copy"></i>
+                </div>                
+                <span class="tooltiptext--copy">Адрес скопирован</span>
+            </li>
+            <li class="contacts__item hh">
+                <a href="https://samara.hh.ru/resume/45020808ff0b9d63e90039ed1f6e4c7a696565" target="_blank">
+                    HeadHunter
+                </a>
+            </li>
+            <li class="contacts__item">
+                <a href="https://t.me/redisick" target="_blank">
+                    <i class="fa-brands fa-telegram"></i> redisick
+                </a>
+            </li>
+        </ul>
+        <div class="gem-2 diamond-1"></div>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__list">
+                <li class="footer__item"><a href="#intro">Я кто?</a></li>
+                <li class="footer__item"><a href="#skills">Что я умею</a></li>
+                <li class="footer__item"><a href="#projects">Мои проекты</a></li>
+                <li class="footer__item"><a href="#contacts">Контакты</a></li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="https://samara.hh.ru/resume/45020808ff0b9d63e90039ed1f6e4c7a696565" target="_blank">
+                        Моё резюме на HeadHunter
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="https://t.me/redisick" target="_blank">
+                        <i class="fa-brands fa-telegram"></i> redisick
+                    </a>
+                </li>
+                <li class="footer__item">sur-mur@mail.ru
+                </li>
+                <li class="footer__item">2023</li>
+            </ul>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>

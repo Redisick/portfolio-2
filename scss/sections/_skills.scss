@@ -1,0 +1,39 @@
+@use "abstracts" as *;
+@use "base" as *;
+
+.skills {
+    margin-bottom: 3rem;
+    padding: 0;
+    position: relative;
+    text-align: center;
+
+    @media (min-width: $medium){
+        margin-bottom: 6rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5em;
+
+        @media (min-width: $medium){
+            grid-template-columns: repeat(6, 1fr);
+        }
+        @media (min-width: $large){
+            gap: 1em;
+        }
+    }
+
+    &__icon {
+        background-color: $clr-light-2;
+        padding: 1.5em 1em;
+        text-align: center;
+
+        outline: 6px solid $clr-light-transparent;
+        outline-offset: -5px;
+
+        & i {
+            margin-bottom: 0.5em;
+        }
+    }
+}

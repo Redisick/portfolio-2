@@ -1,0 +1,56 @@
+@use "./colors" as *;
+
+@mixin glass {
+  background: $glass-gradient;
+
+  border: 5px solid rgba(255, 255, 255, 0.4);
+  border-right-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.heart {
+  @include glass;
+  width: 40px;
+  height: 70px;
+  transform: rotate(45deg);
+  position: relative;
+  left: 40px;
+
+  &::before{
+    @include glass;
+    position: absolute;
+    content: '';
+  }
+
+  &::before {
+    width: 35px; 
+    height: 40px;
+
+    left: -35px;
+    top: 25px; 
+  }
+}
+
+.diamond-1 {
+  @include glass;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  transform: rotate(45deg);
+}
+  
+.diamond-2,
+.diamond-3 {
+  @include glass;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  transform: rotate(58deg) skew(30deg);
+}
+
+.diamond-3 {
+  background: $glass-gradient-2;
+  transform: rotate(-30deg) skew(35deg);
+}
+
+      
